@@ -1,0 +1,36 @@
+/* --- GLOBAL --- */
+h1, p, figcaption {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.layout {
+    grid-template-areas: 
+    "hb h h h"
+    "n c c c"
+    "f f f f";
+}
+
+/* --- HEADER --- */
+.header {
+    grid-area: h;
+}
+
+/* --- HOME --- */
+.homebutton {
+    grid-area: hb;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    grid-area: n;
+}
+
+/* --- CONTENT --- */
+.content {
+    grid-area: c;
+}
+
+/* --- FOOTER --- */
+.footer {
+    grid-area: f;
+}
