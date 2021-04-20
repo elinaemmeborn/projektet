@@ -1,36 +1,156 @@
 /* --- GLOBAL --- */
-h1, p, figcaption {
+*{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-decoration: none;
+
+    box-sizing: border-box;
 }
 
-.layout {
-    grid-template-areas: 
-    "hb h h h"
-    "n c c c"
-    "f f f f";
+body {
+    background-image: url("bilder/ivana3.jpg");
+    background-attachment: fixed;
 }
+
 
 /* --- HEADER --- */
 .header {
-    grid-area: h;
+    padding: 40px;
+    text-align: center;
+
+    background-color: #B5C6D4;
+
+    width: 100%;
 }
 
-/* --- HOME --- */
-.homebutton {
-    grid-area: hb;
+.header h1 {
+    font-size: 40px;
+    color: black;
 }
+
+.home_button {
+    height: 100%;
+    float: left;
+    background-color: #B5C6D4;
+}
+
 
 /* --- NAVBAR --- */
+
 .navbar {
-    grid-area: n;
+    overflow: hidden;
+    background-color: #65AED4;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    float: left;
+    text-align: center;
+    padding: 14px 20px;
+    color: black;
+}
+
+.navbar a:hover {
+    background-color: white;
+}
+
+.navbar a.right {
+    float:right
 }
 
 /* --- CONTENT --- */
-.content {
-    grid-area: c;
+
+p, figcaption {
+    color: white;
+}
+
+figcaption {
+    font-size: 15px;
+    padding-bottom: 100px;
+}
+
+h2, h4 {
+    color: white;
+}
+
+.container {
+    background-color: #1C1C1E;
+    border-radius: 1em;
+    padding: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.figure {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
+.planet-bild {
+    float: left;
+    margin: 70px 15px 15px 0;
+}
+
+.planet-info {
+    display: inline-block;
+    margin: auto 0;
+}
+
+.planet-post {
+    margin-left: 150px;
 }
 
 /* --- FOOTER --- */
+
 .footer {
-    grid-area: f;
+    padding: 20px;
+    text-align: center;
+
+    background-color: #B5C6D4;
+    color: black;
+
+    clear: both;
+    position: relative;
+}
+
+/* --- RESPONSIVE LAYOUT --- */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }
