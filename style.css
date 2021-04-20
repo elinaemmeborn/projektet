@@ -94,8 +94,8 @@ h2, h4 {
 }
 
 .post-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: auto;
 }
 
 .row {
@@ -124,9 +124,7 @@ h2, h4 {
 }
 
 .planet-post {
-    margin-left: 150px;
-    width: 100%;
-    height: 100%;
+    margin-left: 200px;
 }
 
 /* --- FOOTER --- */
@@ -152,7 +150,7 @@ h2, h4 {
 
 @media screen and (max-width: 400px) {
     .navbar a {
-        float: none;
+    /*    float: none;*/
         width: 100%;
     }
 }
