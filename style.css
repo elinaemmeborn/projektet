@@ -14,8 +14,6 @@
 body {
     background-image: url("bilder/ivana3.jpg");
     background-attachment: fixed;
-
-    min-height: 100vh;
 }
 
 
@@ -131,7 +129,7 @@ h2, h4 {
     background-color: #1C1C1E;
     width: 100%;
     height: 100%;
-    padding: 100px;
+    padding: 30px;
 }
 
 .om p {
